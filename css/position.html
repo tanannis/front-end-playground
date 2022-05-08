@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS Positioning</title>
+    
+		<style>
+      body {
+        height: 4000px;
+      }
+      /* 
+        These positioning aren't as popular for modern responsive websites anymore because not so mobile friendly.
+
+        Static: Not effected by top/bottom/right/left properties/values
+
+        Relative: top/bottom/right/left values cause element to be moved from its normal position
+        
+        Absolute: Positioned relative to it's parent element that is positioned "relative"
+
+        Fixed: Positioned relative to the viewport (the page, it will stay in a fixed position even when user scroll the page up/down left/right)
+
+        Sticky: Postioned based on scroll position, similar to Fixed, it stays at a position where you want it to be, usually at the top.
+       */
+			.box {
+				width: 100px;
+				height: 100px;
+			}
+      .container {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        background: #333;
+      }
+			#box-1 {
+        position: relative;
+        top: 50px;
+        left: 50px;
+        /* Add z-index so it wouln't be hidden behind the container. The higher the z-index, the closer to us */
+        z-index: 1;
+				background: red;
+			}
+			#box-2 {
+        position: absolute;
+        top: 100px;
+        left: 100px;
+				background: yellow;
+			}
+			#box-3 {
+        position: absolute;
+        bottom: 100px;
+        right: 100px;
+				background: green;
+			}
+			#box-4 {
+        position: fixed;
+				background: blue;
+			}
+			#box-5 {
+        position: sticky;
+        top: 0;
+				background: orange;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div id="box-1" class="box"></div>
+
+    <div class="container">
+      <div id="box-2" class="box"></div>
+      <div id="box-3" class="box"></div>
+    </div>
+
+		<div id="box-4" class="box"></div>
+		<div id="box-5" class="box"></div>
+	</body>
+</html>

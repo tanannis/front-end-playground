@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Div, Span, Id, Class</title>                  
+</head>
+
+<!-- This style is for demo only, it shouldn't be here! -->
+<style>
+  .card {
+    border: 1px solid #ccc;
+    background: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  .enhace {
+    color: yellow;
+    background-color: black;
+  }
+</style>
+
+<body>
+  <!-- class can repeat, but id should be unique! -->
+  <div id="main-header" class="card">
+    <h1>My Website</h1>
+    <p>A site about me</p>
+  </div>
+  <ul id="main-nav">
+    <li>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </li>
+  </ul>
+
+  <div id="about" class="card">
+    <h3>About</h3>
+    <!-- span with class -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores corporis cumque est <span class="enhace"> werwhp dfwpk sdfsdfs ewrheio</span>velit dolore nostrum eius ullam autem deserunt reiciendis explicabo molestias voluptatem, et voluptate sunt quibusdam consequatur nobis. Officia.</p>
+  </div>
+
+  <div id="contact" class="card">
+    <h3>Contact</h3>
+    <ul>
+      <li>Address: 50 Main St, NY NY</li>
+      <li>Phone: (123) 456-789</li>
+      <li>Email: me@email.com</li>
+    </ul>
+
+<!-- footer -->
+    <div id="footer">
+      <p>Copyright &copy; 2022</p>
+    </div>
+
+  </div>
+</body>
+</html>

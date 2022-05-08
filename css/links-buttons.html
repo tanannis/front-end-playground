@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links & Buttons</title>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    a {
+      color: #333;
+      /* default is with underline, set it to none will get rid of the underline */
+      text-decoration: none;
+    }
+    
+    /* Set hover color */
+    a:hover {
+      color: coral;
+    }
+    /* Set color after the user clicked the link to show it's been visited */
+    /*
+    a:visited {
+      color: red;
+    }
+    */
+
+    /* Set color when user clicks the link */
+    a:active {
+      color: green;
+    }
+
+    /* Button Styling */
+    .btn {
+      background: #4c6ca0;
+      color: #fff;
+      border: none;
+      font-size: 16px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      /* Buttons don't have a pointer by default, need to add here */
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      color: #f4f4f4;
+      background: #446190;
+    }
+  </style>
+
+</head>
+<body>
+  <br>
+  <!-- Adding class="btn" here will make it look like a button but not a real button -->
+  <a class="btn" href="#">My Link</a>
+  <br>
+  <br>
+  <!-- This is a real button -->
+  <button class="btn">My Button</button>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Basics</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .flex-container {
+      display: flex;
+
+      /* By default, the flex direction is row. Column reverse will reverse the order of the items */
+      /* flex-direction: column-reverse; */
+
+      /* the wrap will move items down if you make your webpage smaller */
+      /* flex-wrap: wrap; */
+    }
+
+    .item {
+      background: #f4f4f4;
+      border: #ccc solid 2px;
+      margin: 10px;
+      padding: 10px;
+      text-align: center;
+      border-radius: 10px;
+      /* width: 200px; */
+
+      /*      grow shrink basis */
+      /* flex: 1 0 200px; */
+    }
+
+    .item-1 {
+      /* By default, each item will shrink with your page unless you send each to 0 */
+      flex-shrink: 0;
+    }
+
+    .item-2 {
+      /* This item stretches as you stretch the page*/
+      flex-grow: 1;
+      flex-basis: 0;
+    }
+
+    .item-3 {
+      flex-grow: 2;
+      /* Now  item-3 is twice the size of item-2 because both set basis to 0 and the grow of this item is larger than item-2*/
+      flex-basis: 0;
+    }
+    
+
+  </style>
+
+</head>
+<body>
+  <div class="flex-container">
+    <!-- each item below is a flex item -->
+    <div class="item item-1">
+      <h3>Item 1</h3>
+    </div>
+
+    <div class="item item-2">
+      <h3>Item 2</h3>
+    </div>
+
+    <div class="item item-3">
+      <h3>Item 3</h3>
+    </div>
+  </div>
+</body>
+</html>

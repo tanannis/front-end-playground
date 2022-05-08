@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Floats & Alignment</title>
+
+		<style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 30px auto;
+      }
+      .container {
+        /* Make sure to use max-width not width so the items won't get cut off in a smaller screen */
+        max-width: 960px;
+        /* To move element to the center, use "auto" */
+        margin: 30px auto;
+      }
+
+      /* The Clear is to make sure box-4 gets pushed down, not put behind the floated boxes */
+      .clr {
+        clear: both;
+      }
+
+      .box {
+        background:#f4f4f4;
+        border: 1px solid #333;
+        padding: 20px;
+        margin-bottom: 15px;
+      }
+      .box p {
+        /* Tex Align Property, to left by default */
+        /* text-align: right; */
+        /* text-align: center; */
+        text-align: justify;
+      }
+
+      /* Before Flex and Grid exist, use floats, but shouldn't use it anymore, and now is not responsive yet */
+      #box-2 {
+        float: left;
+        width: 68%;
+      }
+
+      #box-3 {
+        float: right;
+        width: 30%;
+      }
+
+    </style>
+
+	</head>
+	<body>
+		<div class="container">
+			<div id="box-1" class="box">
+				<h3>Heading</h3>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quidem
+					veritatis. Excepturi rem libero eveniet deserunt aliquam id magni,
+					facilis, ad, in perspiciatis recusandae vel assumenda rerum neque
+					possimus quae.
+				</p>
+			</div>
+			<div id="box-2" class="box">
+				<h3>Heading</h3>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quidem
+					veritatis. Exceptu rem libero eveniet deserunt aliquam id magni,
+					facilis, ad, in perspiciatis recusandae vel assumenda rerum neque
+					possimus quae.
+				</p>
+			</div>
+			<div id="box-3" class="box">
+				<h3>Heading</h3>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quidem
+					veritatis. Exceptu rem libero eveniet deserunt aliquam id magni,
+					facilis, ad, in perspiciatis recusandae vel assumenda rerum neque
+					possimus quae.
+				</p>
+			</div>
+
+      <!-- The Clear div here is to prevent box-4 being put behind the floated elements i/o pushed down -->
+      <div class="clr"></div>
+
+      <div id="box-4" class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quidem
+          veritatis. Exceptu rem libero eveniet deserunt aliquam id magni,
+          facilis, ad, in perspiciatis recusandae vel assumenda rerum neque
+          possimus quae.
+        </p>
+      </div>
+		</div>
+	</body>
+</html>

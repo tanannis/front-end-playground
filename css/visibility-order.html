@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visibility, Order & Negative Margin</title>
+
+  <style>
+    h1 {
+      /* display: none; */
+      /* visibility: hidden; */
+
+      /* Putting the "!important" will override the target class  */
+      color: blue !important;
+    }
+
+    /* targeting a class will override the h1 itself */
+    .hello {
+      color: red;
+      /* this negative margin will push it up, but not recommend to use negative margin */
+      margin-top: -30px;
+    }
+
+  </style>
+</head>
+<body>
+  <h1 class="hello">Hello World</h1>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto aut laudantium molestiae magni, dignissimos fugiat ex nam totam deleniti obcaecati itaque odit sed sit suscipit vero assumenda ipsa unde quam.</p>
+</body>
+</html>

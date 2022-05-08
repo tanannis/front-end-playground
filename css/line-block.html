@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inline & Block Styling</title>
+
+  <style>
+    li {
+      /* By default, li is a block element so it stretches across the page. This will change it to inline so items will display next to each other and bullet points will disappear */
+      display: inline;
+    }
+    li a {
+      padding-right: 20px;
+    }
+
+    img {
+      /* By default, img is an inline element so it would stay on one side. This will change it to block so it can be centered on the page */
+      display: block;
+      margin: auto;
+    }
+    .box {
+      width: 32.8%;
+      /* By default, div is a block element, but if we make it an inline element we can't have width and padding. The "inline-block" will let us have both, but make sure to set box-sizing to border-box or it wouldn't work perfectly */
+      display: inline-block;
+      box-sizing: border-box;
+      background: #f4f4f4;
+      padding: 20px;
+      margin-bottom: 15px;
+    }
+  </style>
+
+</head>
+<body>
+  <ul>
+    <!-- Li is a block element by default -->
+    <li><a href="#">Technology</a></li>
+    <li><a href="#">Business</a></li>
+    <li><a href="#">Fashion</a></li>
+  </ul>
+  <br>
+  <br>
+
+  <!-- This is an inline element by default. If you want to center an image, has to change it to block element -->
+  <img src="/images/leaf.png" alt="My Image">
+  <br>
+  <br>
+
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, adipisci rerum consequatur harum expedita dolorem. Ut autem libero eaque aspernatur, sunt laudantium quo veritatis architecto nihil omnis, deleniti rerum consequuntur?</p>
+  </div>
+
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+  Architecto, adipisci rerum consequatur harum expedita 
+  dolorem. Ut autem libero eaque aspernatur, sunt laudantium 
+  quo veritatis architecto nihil omnis, deleniti rerum 
+  consequuntur?</p>
+  </div>
+
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+  Architecto, adipisci rerum consequatur harum expedita 
+  dolorem. Ut autem libero eaque aspernatur, sunt laudantium 
+  quo veritatis architecto nihil omnis, deleniti rerum 
+  consequuntur?</p>
+  </div>
+
+</body>
+</html>
