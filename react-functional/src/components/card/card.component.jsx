@@ -4,7 +4,7 @@ const Card = (props) => {
   const { name, email, id } = props.monster;
   
   return (
-    <div className="card-container" key={id}>
+    <div className="card-container">
 
     <img
       alt={`monster ${name}`}

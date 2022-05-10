@@ -17,7 +17,7 @@ const App = () => {
 	const [searchField, setSearchField] = useState("");
 	const [monsters, setMonsters] = useState([]);
 	const [filteredMonsters, setFilterMonsters] = useState(monsters);
-
+	console.log("RENDER")
 	// Everytime if React see the values inside [] changes, the App function will re-run and re-render. This fetch call will cause side effect.
 	useEffect(() => {
 		fetch("https://jsonplaceholder.typicode.com/users")
