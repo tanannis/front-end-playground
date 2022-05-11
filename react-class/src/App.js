@@ -55,9 +55,7 @@ class App extends Component {
 	onSearchChange = (event) => {
 		// console.log("EVENT", event);
 		const searchField = event.target.value.toLowerCase();
-		this.setState(() => {
-			return { searchField };
-		});
+		this.setState({searchField})
 	}
 
 	render() {

@@ -8,7 +8,7 @@ class Card extends Component {
     const { name, email, id } = this.props.monster;
     
     return (
-      <div className="card-container" key={id}>
+      <div className="card-container">
 
       <img
         alt={`monster ${name}`}
