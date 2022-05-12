@@ -9,7 +9,7 @@
   
   Side Effect (unpredictable behavior / outcome)
   - When we modify something, we cause side effects 
-  - An outside variable being changed by the result of the function
+  - A global / outside of the scope variable being changed by the result of the function
  */
 
 
