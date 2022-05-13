@@ -73,8 +73,3 @@ https://www.thegeekstuff.com/2011/11/tcp-ip-fundamentals/
 
 ### DOM (Document Object Model)
 - is a cross-platform and language-independent interface that treats an XML or HTML document as a tree structure wherein each node is an object representing a part of the document. The DOM represents a document with a logical tree.
-
-### Axios
-- a promise based HTTP client for the browser and Node.js
-- it makes it easy to send asynchronous HTTP requests to REST endpoints and perform CRUD operations
-- it can be used in plain JavaScript or with a library such as Vue or React
