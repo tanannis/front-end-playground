@@ -21,3 +21,14 @@ export const ProductsProvider = ({children}) => {
     </ProductsContext.Provider>
   )
 }
+
+/*
+
+const productReducer = (state, action) => {
+  return {
+    currentUser: 
+  }
+}
+
+*/
+
