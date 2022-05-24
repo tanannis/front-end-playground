@@ -6,6 +6,7 @@
 
 ### useState (set state)
 - same as class component's `this.setState()`
+- re-renders whenever state changes
 
 ### useEffect (use side effect)
 - Fetching inside useEffect prevents fetching API re-render in a infinite loop
@@ -23,3 +24,20 @@ There are four steps to using React context:
 
 ### useMemo (use memoization)
 - It allows you to memoize expensive functions so that you can avoid calling them on every render. Simply pass in a function and an array of inputs and useMemo will only recompute the memoized value when one of the inputs has changed.
+- it returns a memoized value.
+
+### useRef
+- used to store a mutable value that doesn't cause a re-render when updated.
+- good to use for internal tracking what won't cause the client re-renders.
+
+### useCallback
+- NOT for fetching data
+- it's for user events e.g click a button, submit a form etc
+- use it to prevent function from re-rendering unless state changes, similar to `useMemo`
+- it returns a memoized function
+
+### useReducer
+- it returns the current `state` and a `dispatch` method
+
+### e.persist()
+- Prevents React from resetting its properties
