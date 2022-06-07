@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>before-after-pseudo-selectors.html</title>
+
+		<style>
+			/*
+			.is-required:before {
+				content: "^^";
+				color: blue;
+				padding-left: 2px;
+			}
+			.is-required:after {
+				content: "**";
+				color: red;
+				padding-left: 2px;
+			} 
+      */
+			body {
+				font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+					"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+				background-color: #333;
+				color: white;
+			}
+
+			/* FLEX */
+			header {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				height: 100vh;
+			}
+
+			header:before {
+				content: "";
+				background: url("https://source.unsplash.com/1600x900/?nature,water")
+        no-repeat center center/cover;
+        opacity: 0.4;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+         /* Add a lower z-index so image would be behind the text */
+        z-index: -1;
+			}
+
+			header > h1 {
+				font-size: 4rem;
+				margin: 1rem;
+			}
+
+		</style>
+	</head>
+	<body>
+		<!-- <label class="is-required" for="name"> Name </label> -->
+		<!-- <input type="text" /> -->
+		<header>
+			<h1>HELLO WORLD!</h1>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit,
+				laboriosam.
+			</p>
+		</header>
+
+		<section>
+			<h3>Lorem, ipsum dolor</h3>
+			<p>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, saepe
+				nobis nesciunt reiciendis illum sint adipisci nam perferendis quam
+				natus, fuga vitae obcaecati assumenda autem rerum a? Perferendis,
+				eveniet temporibus!
+			</p>
+		</section>
+	</body>
+</html>

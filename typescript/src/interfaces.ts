@@ -20,3 +20,4 @@ interface ISearchBoxProps {
 interface ISearchChangeProps extends ISearchBoxProps {
   onSearchChange: (a: string) => void
 }
+
