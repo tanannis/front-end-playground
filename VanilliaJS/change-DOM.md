@@ -22,7 +22,7 @@ element.style.backgroundColor = "blue"
   node.cloneNode();
 
 ### Then, add newly created element to the DOM
-* Insert newNode at end of current node: 
+* Insert newNode at the end of current node: 
   node.appendChild(newNode);
 
 * Insert newNode at start of current node:

@@ -1,4 +1,4 @@
-/*
+/* https://www.freecodecamp.org/news/how-javascript-implements-oop/
   Does JavaScript has Class? Yes and No.
     Yes - It's a syntactic sugar, it makes it look like Class but not real Class
     No - Under the hood it's still prototype and inheritance
