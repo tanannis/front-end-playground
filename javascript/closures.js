@@ -1,20 +1,20 @@
 /*
-  Closures & Scrope 
-  - function decleared or return within an outer function. 
-  - this inner function is only accessable within the outer function
+  Closures & Scope 
+ - function declared or return within an outer function. 
+ - this inner function is only accessible within the outer function
 */
 
 // Example:
 function climbTree(treeType) {
-  let treeString = "You climbed a ";
+	let treeString = "You climbed a ";
 
-  function sayClimbTree() {
-    // this inner function has access to the variables in the outer scope
-    // in which it was defined - including any defined parameters
-    return treeString + treeType;
-  }
+	function sayClimbTree() {
+		// this inner function has access to the variables in the outer scope
+		// in which it was defined - including any defined parameters
+		return treeString + treeType;
+	}
 
-  return sayClimbTree();
+	return sayClimbTree();
 }
 
 // We assign the result to a variable

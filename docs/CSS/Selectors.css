@@ -1,0 +1,44 @@
+/* CSS Selectors */
+
+/* Universal Selector */
+* {
+	box-sizing: border-box;
+}
+
+/* Element Selector */
+div {
+	background: red;
+}
+
+/* ID Selector */
+#container {
+	width: 100px;
+}
+
+/* Class Selector */
+.container {
+	width: 100px;
+}
+
+/* Descendent Combinator */
+#container .box {
+	float: left;
+	padding-bottom: 15px;
+}
+
+/* Child Combinator */
+#container > .box {
+	float: left;
+	padding-bottom: 15px;
+}
+
+/* General Sibling Combinator */
+h2 ~ p {
+	margin-bottom: 20px;
+}
+
+/* Attribute Selector  */
+input [type="”text”"] {
+	background-color: #444;
+	width: 200px;
+}

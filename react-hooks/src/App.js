@@ -8,23 +8,23 @@ const App = () => {
 	const [searchField, setSearchField] = useState("");
 	const [monsters, setMonsters] = useState([]);
 	const [filteredMonsters, setFilterMonsters] = useState(monsters);
-	console.log("RENDER")
-	// Everytime if React see the values inside [] changes, the App function will re-run and re-render. This fetch call will cause side effect.
+	console.log("RENDER");
+	// Everytime if React sees the values inside [] changes, the App function will re-run and re-render. This fetch call will cause side effect.
 	useEffect(() => {
 		fetch("https://jsonplaceholder.typicode.com/users")
 			.then((response) => response.json())
 			.then((users) => setMonsters(users))
-			.catch((error) => console.log("error", error))
+			.catch((error) => console.log("error", error));
 	}, []);
 
 	// useEffect(async() => {
-		// try {
-			// const data = await fetch("https://jsonplaceholder.typicode.com/users");
-			// const users = await data.json();
-			// setMonsters(users)
-		// } catch (error) {
-			// console.log("error", error);
-		// }
+	// try {
+	// const data = await fetch("https://jsonplaceholder.typicode.com/users");
+	// const users = await data.json();
+	// setMonsters(users)
+	// } catch (error) {
+	// console.log("error", error);
+	// }
 	// }, [])
 
 	useEffect(() => {
@@ -47,7 +47,7 @@ const App = () => {
 				className="monster-search-box"
 				placeholder="search monsters"
 			/>
-			<CardList monsters={filteredMonsters}/>
+			<CardList monsters={filteredMonsters} />
 		</div>
 	);
 };
