@@ -1,0 +1,22 @@
+[
+	{
+		"id": 1,
+		"name": "Kobe the cutie",
+		"company": "123 Designs",
+		"phone": "444-555-666"
+	},
+
+	{
+		"id": 2,
+		"name": "Annis the beauty",
+		"company": "234 Main St",
+		"phone": "333-555-666"
+	},
+
+	{
+		"id": 3,
+		"name": "John the dorky",
+		"company": "Data Science Lab",
+		"phone": "444-777-666"
+	}
+]
